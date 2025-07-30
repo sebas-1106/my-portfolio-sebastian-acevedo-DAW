@@ -1,0 +1,42 @@
+export const projects = [
+  {
+    title: "Primer proyecto",
+    description: "Menu para el emprendimiento 'De Colombia Pa'l Mundo'",
+    image: "./public/images/proyecto4.png",
+    tech: ["HTML5", "CSS3"],
+    github: "https://github.com/sebas-1106/Entrega-Flexbox---Sebastian_Acevedo",
+    link: "www.proyecto1.com",
+  },
+  {
+    title: "Segundo proyecto",
+    description: "Login para la empresa de tecnologia de la informacion, Emprinder",
+    image: "./public/images/proyecto2.png",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/sebas-1106/Login_B2B_DAW",
+    link: "www.proyecto2.com",
+  },
+  {
+    title: "Tercer proyecto",
+    description: "Proyecto inspirado de la empresa comercializadora de relojeria Bussines Colombia",
+    image: "./public/images/proyecto1.png",
+    tech: ["HTML5", "CSS3"],
+    github: "https://github.com/sebas-1106/Entrega-Proyecto-1---Sebastian_Acevedo",
+    link: "www.proyecto1.com",
+  },
+  {
+    title: "Cuarto proyecto",
+    description: "Galeria Dinamica con tecnologia de JavaScript",
+    image: "./public/images/proyecto3.png",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/sebas-1106/Proyecto---Galeria-Dinamica",
+    link: "www.proyecto1.com",
+  },
+  {
+    title: "Quinto proyecto",
+    description: "SPA inspirada en la pagina del club de futbol America de Cali",
+    image: "./public/images/proyecto5.png",
+    tech: ["Vanilla", "Vite", "CSS3", "HTML"],
+    github: "https://github.com/sebas-1106/america-de-cali-spa",
+    link: "www.proyecto1.com",
+  },
+];
