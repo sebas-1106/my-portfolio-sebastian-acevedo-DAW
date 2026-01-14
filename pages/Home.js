@@ -4,11 +4,57 @@ import { cleanPage } from "../utils/cleanPage";
 export const Home = () => {
   const main = document.querySelector("main");
   cleanPage(main);
+
   main.innerHTML = `
     <section class="home">
-    <p>Hey, I'm</p>
-    <h1>Sebastian Acevedo</h1>
-    <p>¡Hola! Soy un estudiante apasionado de Desarrollo de Aplicaciones Web, con un profundo interés por la tecnología y la creación de experiencias digitales innovadoras. Mi objetivo es seguir fortaleciendo mis conocimientos en el diseño, desarrollo y optimización de páginas web, explorando las últimas tendencias y herramientas del sector. Busco aplicar mis habilidades técnicas y creativas en proyectos laborales que me permitan crecer profesionalmente y contribuir al éxito de equipos dinámicos. Estoy comprometido con el aprendizaje continuo y la mejora constante para convertirme en un desarrollador web altamente competente.</p>
-    <a href="acevedosebastian455@gmail.com">Say hi →</a>
-    </section>`;
+      <span class="home-intro">Hey, I'm</span>
+
+      <h1>Sebastian Acevedo</h1>
+
+      <h2 class="home-subtitle">
+        Estudiante de Desarrollo de Aplicaciones Web · Junior Developer
+      </h2>
+
+      <p class="home-description">
+        Me estoy formando como desarrollador web, con interés en crear interfaces
+        funcionales y aprender nuevas tecnologías. Busco crecer profesionalmente
+        participando en proyectos reales y equipos colaborativos.
+      </p>
+
+    </section>
+    <div class="home-side">
+  <div class="info-item">
+    <span class="icon">👨‍💻</span>
+    <div>
+      <h3>Perfil</h3>
+      <p>Desarrollador Web Junior</p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <span class="icon">📚</span>
+    <div>
+      <h3>Formación</h3>
+      <p>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <span class="icon">🚀</span>
+    <div>
+      <h3>Enfoque</h3>
+      <p>Aprender, mejorar y crear proyectos web funcionales</p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <span class="icon">🤝</span>
+    <div>
+      <h3>Valor</h3>
+      <p>Compromiso, responsabilidad y ganas de crecer</p>
+    </div>
+  </div>
+</div>
+
+  `;
 };

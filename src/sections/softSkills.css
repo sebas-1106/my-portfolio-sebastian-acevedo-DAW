@@ -1,0 +1,61 @@
+/* Sección general */
+.skills.soft-skills {
+  padding: 4rem 2rem;
+  background-color: #111111;
+  text-align: center;
+}
+
+/* Título */
+.skills.soft-skills h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.skills.soft-skills h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #6c63ff;
+  display: block;
+  margin: 0.8rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Tarjetas */
+.skill-card {
+  background: #ffffff;
+  padding: 1.8rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Título de skill */
+.skill-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #6c63ff;
+}
+
+/* Texto */
+.skill-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}

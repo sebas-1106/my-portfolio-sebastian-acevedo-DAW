@@ -1,34 +1,115 @@
 .home {
-  padding: 0 8rem;
-  height: 80vh;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 3rem;
+  gap: 1.2rem;
+  padding: 0 2rem;
 }
 
-@media (max-width: 700px) {
-  .home {
-    padding: 0 2rem;
-  }
+.home-intro {
+  color: #aaa;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.home > h1 {
-  font-size: 5.5rem;
-  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15);
-  background-size: 300%;
-  background-clip: text;
+.home h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  background: linear-gradient(90deg, #7ee8fa, #80ff72);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientShift 5s infinite linear;
-  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.1);
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% }
-  100% { background-position: 100% }
+.home-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #cfcfcf;
 }
 
-.home > a {
+.home-description {
+  max-width: 600px;
+  color: #b5b5b5;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.home-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Botones */
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #80ff72;
+  color: #111;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  border-color: #80ff72;
+}
+
+/* Bloque derecho */
+.home-side {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* Item */
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
   font-size: 1.5rem;
+}
+
+.info-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #80ff72;
+}
+
+.info-item p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .home-side {
+    margin-top: 2rem;
+  }
 }
